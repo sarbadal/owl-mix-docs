@@ -28,10 +28,6 @@ html_css_files = [
     'custom.css',
 ]
 
-redirects = {
-    "*": "$source/"
-}
-
 html_show_sphinx = False
 html_copy_source = False
 
