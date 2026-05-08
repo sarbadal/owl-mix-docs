@@ -9,7 +9,7 @@ author = 'Sarbadal Pal'
 
 extensions = [
     'sphinx.ext.autodoc',
-    # ... other extensions
+    "sphinx_reredirects",
 ]
 
 templates_path = ['_templates']
@@ -27,6 +27,10 @@ html_static_path = ['_static']
 html_css_files = [
     'custom.css',
 ]
+
+redirects = {
+    "*": "$source/"
+}
 
 html_show_sphinx = False
 html_copy_source = False
